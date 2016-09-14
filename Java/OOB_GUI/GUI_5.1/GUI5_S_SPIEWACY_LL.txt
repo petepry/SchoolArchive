@@ -1,0 +1,50 @@
+
+Zadanie. Śpiewacy z klasą abstrakcyjną (4 punkty)
+
+Zdefiniować klasę abstrakcyjną Spiewak reprezentującą śpiewaków. Każdy śpiewak posiada nazwisko oraz numer startowy (np. w konkursie talentów), nadany automatycznie przy tworzeniu obiektu. Klasa Spiewak powinna posiadać m.in. konstruktor Spiewak(String nazwisko) oraz następujące metody:
+
+a. abstrakcyjną: abstract String spiewaj(), która docelowo zwraca tekst śpiewany przez śpiewaka w konkursie.
+b. public String toString() zwracającą informację o śpiewaku.
+c. statyczną:... najglosniej(...) przyjmującą tablicę obiektów/śpiewaków oraz zwracającą obiekt/śpiewaka, w którego śpiewanym tekście znajduje się najwięcej dużych liter (patrz. metodę spiewaj()).
+ 
+W metodzie main klasy testującej Main:
+
+a. stworzyć kilka (co najmniej 3) obiektów/śpiewaków poprzez użycie anonimowych klas wewnętrznych rozszerzających klasę Spiewak. Użycie tych klas polega na podawaniu tego, co śpiewak ma śpiewać w konkursie.
+b. stworzyć tablicę śpiewaków składającą się z obiektów z punktu a.
+c. testować metodę najglosniej(...) z klasy Spiewak.
+
+Stworzyć klasę Spiewak w taki sposób, aby następująca metoda main z klasy Main:
+
+public class Main {
+    public static void main(String[] args)
+    {
+    	Spiewak s1 = new Spiewak("Carrey"){
+          /*<-  kod */
+        };
+  
+        Spiewak s2 = new Spiewak("Houston"){
+          /*<-  kod */
+        };
+  
+        Spiewak s3 = new Spiewak("Madonna"){
+          /*<-  kod */
+        };
+  
+        Spiewak sp[] = {s1, s2, s3};
+  
+        for (Spiewak s : sp)
+            System.out.println(s);
+        
+        System.out.println("\n" + Spiewak.najglosniej(sp));
+    }
+}
+
+wyprowadziła prawidłową informację dokładnie jak poniżej:
+
+(1) Carrey: oooooooooooo
+(2) Houston: a4iBBiii
+(3) Madonna: aAa
+
+(2) Houston: a4iBBiii
+
+Ważne: Kod klas Main utworzony przez generator może (i musi) być zmieniony tylko w miejscach zaznaczonych na zielono. Inne modyfikacje tego kodu nie są dopuszczalne i będą skutkować uzyskaniem 0 punktów.

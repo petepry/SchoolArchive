@@ -1,0 +1,27 @@
+Zadanie:
+
+Katalog {user.home}/UTP6dir  zawiera pliki tekstowe (z rozszerzeniem .txt) umieszczone w różnych podkatalogach. Kodowanie plików to Cp1250.
+Przeglądając rekursywnie drzewo katalogowe, zaczynające się od {user.home}/UTP6dir,  wczytaać wszystkie te pliki. i połączoną ich zawartość zapisać do pliku o nazwie UTP6res.txt, znadującym się w katalogu projektu. Kodowanie pliku
+UTP6res.txt winno być UTF-8.
+
+Poniższy gotowy fragment winien wykonać całą robotę:
+
+      public class Main {
+        public static void main(String[] args) {
+          String dirName = System.getProperty("user.home")+"/UTP6dir";
+          String resultFileName = "UTP6res.txt";
+          Futil.processDir(dirName, resultFileName);
+        }
+      }
+
+Uwagi:
+
+    pliku Main.java nie wolno w żaden sposób modyfikować,
+    trzeba dostarczyć definicji klasy Futil,
+    oczywiście, nazwa katalogu i pliku oraz ich położenie są obowiązkowe,
+    należy zastosować metody przetwarzania strumieniowego (chodzi o java.util.stream), bez tego uzyskujemy 0 punktów..
+
+
+
+
+

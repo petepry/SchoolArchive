@@ -1,0 +1,41 @@
+Zadanie: Finder (6 punktów)
+
+Napisać program, który wczytuje plik o nazwie "Test.java" z katalogu {user.home} z  kodem źródłowym Javy (poprawnym, czyli kompilującym się bez błędów) i wyszukuje w nim instrukcje if oraz  napisy "wariant". Wyniki dzialania programu w postaci:
+
+Liczba instrukcji if: n
+Liczba napisow wariant: m
+
+należy wypisać na konsoli.
+
+Obowiązkowa klasa Main, służąca do testowania programu winna mieć następującą postać:
+
+public class Main {
+  
+  public static void main(String ... args) throws Exception  {
+    String home = System.getProperty("user.home");
+    Finder finder = new Finder(home + "/Test.java");
+    int nif = finder.getIfCount();
+    int nwar = finder.getStringCount("wariant");
+    System.out.println("Liczba instrukcji if: " + nif);
+    System.out.println("Liczba napisow wariant: " + nwar);
+  }
+  
+}
+
+
+Uwagi: 
+
+    Wszystkie klasy w programiw winny być publiczne (i w oddzielnych plikach)
+    Klasy Main (utworzonej przez generator projektów) nie wolno w żaden sposób modyfikować
+    Plik winien znajdowaać się w  katalou {user.homn} czyli tym który zwróci wywolanie 
+
+    System.getProperty("user.home");
+
+    Plik tworzymy sobie sami .
+    Proszę nie dołączać pliku do projektu.
+    Forma wydruku na konsoli  jest obowiązkowa.
+
+Za niespełnienie tych warunków nie będą przyznawane punkty.
+
+Pomoc:
+instrukcja if ma swoje wymagania składniowe (ale zakładamy, że program jest poprawny). Nie jest instrukcją if coś co tak wygląda, ale jest umieszczone w komentarzu lub w literale napisowym. 

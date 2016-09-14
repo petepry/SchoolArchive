@@ -1,0 +1,5 @@
+
+Przekątne
+
+Narysować przekątne okna w kolorze niebieskim.
+

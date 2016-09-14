@@ -1,0 +1,17 @@
+Przeglądarka obrazków
+
+Napisać program pozwalającu na przeglądanie dowolnych obrazków w formacie gif, jpg lub png z podanego katalogu.
+Obrazki są kolejno pokazywane w tym samym oknie, przy czym:
+a) czas wyświetlania jednego obrazka (w sekundach) jest podany na starcie programu,
+b) obrazki pokazywane są w ich oryginalnych wielkościach,
+c) zmiany rozmiarów obszaru wykreślania reskalują obrazek,
+d) po zakończeniu wyświetlania wszystkich obrazków w oknie ukazuje się napis "Koniec prezentacji".
+e)  rozmiar pisma dla napisu ustalana jest na starcie programu,
+f) napis ma być wyśrodkowany w obszarze wyświetlania w poziomie i w pionie.
+
+Dane (katalog, czas wyświetlania jednego obrazka, rozmiar pisma) podajemy  jako argumenty programu.
+
+Jeśli obrazka nie udąło się załadować (brak lub błąd) w oknie wyświetlany jest napis "Brak obrazka".
+
+Uwaga: za wykonanie zadania bez spelnienia w/w wymagań można dostać najwyżej 3 punkty.
+Punktacja powyżej 3 przyznawana jest tylko przy spełnieniu wszystkich wymagań i zależy od sposobu  oprogramowania.

@@ -1,0 +1,67 @@
+Rozważmy  przykład znanego z wykładów serwera  - książki telefonicznej. Serwer ma dostęp do "bazy" numerów telefonów. Dla prostoty wykorzystamy mapę, w której osobom-kluczom będą przypisane numery telefonów - wartości, a dostęp do niej zrealizujemy poprzez klasę PhoneDirectory.
+
+import java.util.*;
+import java.io.*;
+
+public class PhoneDirectory {
+
+  private Map pbMap = new HashMap();
+
+  public PhoneDirectory(String fileName) {
+    // Inicjalna zawartość książki telefonicznej
+    // jest wczytywana z pliku o formacie
+    //  imię  numer_telefonu
+    try {
+      BufferedReader br = new BufferedReader(
+                             new FileReader(fileName));
+      String line;
+      while ((line = br.readLine()) != null) {
+        String[] info = line.split(" +", 2);
+        pbMap.put(info[0], info[1]);
+      }
+    } catch (Exception exc) {
+        exc.printStackTrace();
+        System.exit(1);
+    }
+  }
+
+  // Zwraca numer telefonu dla podanej osoby
+  public String getPhoneNumber(String name) {
+    return (String) pbMap.get(name);
+  }
+
+  // Dodaje nową osobę do książki
+  // Wynik:
+  // - true - dodana
+  // - false - nie (przy próbie dodania osoby zapisanej już w książce)
+  public boolean addPhoneNumber(String name, String num) {
+    if (pbMap.containsKey(name)) return false;
+    pbMap.put(name, num);
+    return true;
+  }
+
+  // Zastępuje numer podanej osoby nowym
+  // Wynik:
+  // - true (numer zastąpiony)
+  // - false (nie - próba podania nowegu numeru nieistniejącej osoby)
+  public boolean replacePhoneNumber(String name, String num) {
+    if (!pbMap.containsKey(name)) return false;
+    pbMap.put(name, num);
+    return true;
+  }
+
+}  
+
+
+Serwer przez gniazda TCP/IP (z użyciem kanałów i selektorów)  obsługuje zlecenia klientów: 
+
+    get imię (podaj numer telefonu dla wskazanej osoby),
+    add imię numer (dopisz do książki osobę i jej numer telefoniczny),
+    replace imię numer (zastąp w książece numer telefony pdoanej osoby nowym numerem).
+    bye ( zakończenie komunikacji)
+
+Na każde zlecenie klienta serwer odpowiada posyłając (jako jeden wiersz) kod numeryczny wyniku przetworzenia zlecenia oraz opis tego wyniku. Przy zleceniu get posyłany jest w odpowiedzi dodatkowy, kolejny wiersz zawierający numer telefonu.
+
+Zadanie
+omówioną wyżej aplikację  napisać za pomocą protokołu RMI-IIOP.
+Porównać nakłady pracy przy jednym (bezpośrednie użycie gniazd i TCP/IP) i przy drugim podejściu (RMI-IIOP)..

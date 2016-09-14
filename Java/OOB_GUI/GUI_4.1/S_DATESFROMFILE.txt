@@ -1,0 +1,17 @@
+Daty w pliku tekstowym  o nazwie{user.home}/test/daty.txt maja postać YYYY-MM-DD (rok- miesiac- dzien). Oprócz dat, plik zawiera inne informacje.  Wczytać plik i wypisać w jednym wierszu wszystkie poprawne daty - czyli: po wyróżnieniu wszystkich fragmentów, które mogą być datami sprawdzić ich poprawnośc (np. czy właściwa jest liczba dni w miesiącu)
+
+Program powininn w specyficzny sposób traktować niejednozanczną informację (np. 2009-01-111 - czy to błędna data czy potraktowac ją jako 2009-01-11).
+Sposób traktowania takich sytuacji wyjaśnia poniższy przykład.
+
+Dane w pliku:
+
+2007-01-12Jakis txt2008-01-31 xxx 2008-02-29 2008-15-10 2008-19-45 2009-05-01 
+20999-11-11 pppp 2001-00-01 09-01-01 2001-01-00 2009-01-111 2009-02-29 1998-11-11
+
+Program powinien wyprowadzić:
+
+2007-01-12 2008-01-31 2008-02-29 2009-05-01 1998-11-11
+
+Podpowiedź: użyć skanera, wyrażeń regularnych (ale same wyrażenia reg. nie wystarczą).
+
+Uwaga: nazwa i lokalizacja pliku jest obowiązkowa. O katalogu user.home - zob. poprzednie zadania. Proszę nie dostarczać  z projektem swoich własnych plików. 

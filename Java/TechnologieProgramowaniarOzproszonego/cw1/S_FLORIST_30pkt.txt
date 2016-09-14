@@ -1,0 +1,31 @@
+Napisać aplikację, która symuluje zakupy w ogromnej  kwiaciarni.
+W kwiaciarni są kwiaty, kwiaty mają swoje nazwy oraz kolory. Ceny kwiatów znajdują się w cenniku.
+Do kwiaciarni przychodzą klienci. Klienci mają swoją identyfikację (np. imiona) oraz dysponują jakimś zasobem pieniędzy. Wybierają kwiaty i umieszczają je na wózku sklepowym. Następnie płacą za zawartość wózka i przepakowują ją do pudełka.
+Kwiaciarnia  realizuje także większe zamówienia od firm. Zamówione kwiaty pakowane są w pudełka, pudełka ładowane są do kontenerów - klient - po zapłacie - odbiera kontenery.
+Pudełka i kontenery mogą podlegac kontroli przez Główny Urząd Ochrony Kwiatów oraz sekcję Ściągania Podatków od Kwiatów Urzędu Skarbowego.
+
+Wymagania:
+
+    wszystkie rodzaje kwiatów reprezentowane są przez klasy,
+    oczywiście inne byty w programie (klienci, pudełka, kontenery itp.) też są definiowane przez klasy,
+    wprowadzenie do programu nowego rodzaju kwiatów powinno być bardzo proste i  nie wymagać modyfikacji żadnych  innych klas,
+    wykorzystać klasy abstrakcyjne i polimorfizm (koniecznie!),
+    wykorzystać dziedziczenie do minimalizacji kodu,
+    czy i gdzie będzie miejsce na kompozycję?
+    czy i które klasy powinny mieć kopiujące metody fabryczne lub kopiujące konstruktory? zrealizować je,
+    zastanowić się czy i które klasy powinny być niezmienne,
+    czy i w których klasach trzeba zadbać o właściwe zdefiniowanie metod equals(), compareTo() i hashCode(),
+    we wszystkich klasach dostarczyć odpowiednich definicji metod toString(),
+    zastosować wzorzec Singleton (gdzie?),
+    zastosować wzorzec Factory i Flyweight (gdzie?)
+    zastosować wzorzec Visitor ew. razem z Composite (gdzie i po co?),
+    stworzyć GUI dla tej aplikacji, w którym zastosowany zostanie wzorzec MVC,
+
+
+Oprócz działającego programu należy dostarczyć opisu aplikacji w postaci HTML, w którym zawarte będą:
+
+    opis funkcjonalności GUI,
+    opis klas i relacji pomiędzy nimi,
+    dyskusja motywów zastosowania poszczególnych rozwiązań ( w szczególności zastosowania wzorców projektowych), np. w postaci odpowiedzi na postawione w wymaganiach pytania.
+
+Bardzo ważne: opis aplikacji winien być umieszczony w folderze doc w pakiecie zad1 projektu. Do systemu uploadujemy tylko archiwum całego projektu, a nie odrębne zip-y dla projektu i dokumentacji.

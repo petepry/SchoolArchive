@@ -1,0 +1,68 @@
+Zadanie 1 (max  15  p.)
+
+Przedstawić w tabeli JTable państwa z pliku.
+
+Plik powinien mieć następującą postać:
+nazwa_kol1<TAB>nazwa_kol2<TAB> ....
+nazwa_państwa1<TAB>stolica1<TAB> ludność1 ....
+
+Na przykład:
+Name    Capital    Population
+Republic of Poland    Warsaw    38500
+Chech Republic    Prague    10500 
+Kingdom of Spain    Madrid    46599
+
+Plik powinien  znajdować się w katalogu data projektu i miec nazwę countries.txt
+
+Wymaganiem podstawowym jest pokazanie państw w tabeli z użyciem następującej klasy Main, która uruchamia cały program:
+
+import javax.swing.*;
+
+public class Main {
+  
+  private CountryTable ctab;
+  
+  public void createTable(String countriesFileName) throws Exception {
+    ctab = new CountryTable(countriesFileName);
+  }
+  
+  public void showGui() {
+    SwingUtilities.invokeLater( new Runnable() {
+      public void run() {
+        JFrame f = new JFrame("Countries table");
+        f.add( new JScrollPane(ctab) );
+        f.pack();
+        f.setLocationRelativeTo(null);
+        f.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        f.setVisible(true);
+      }
+    });
+  }
+  
+  public static void main(String[] args)  {
+    Main main = new Main();
+    try {
+      main.createTable("data/countries.txt");
+      main.showGui();
+    } catch(Exception exc) {
+      JOptionPane.showMessageDialog(null, "Table creation failed, " + exc);
+    }
+  }
+}
+
+Struktura projektu oraz zawartośc pliku Main.java będzie wygenerowana,
+Zawartości pliku Main.java nie wolno zmieniać. Nazwa i położenie pliku pańswt jest obowiązakowa.
+Archiuwm uploadowanego projektu winno zawierać katalog data z plikiem ocuntries.txt (sprawdzić, czy sa zaznaczenia przy eksporcie projektu)
+
+Za wykonanie podstawowej części zadania mozna uzyskać 3 punkty.
+
+Dodatkowe wymagania:
+
+a) kolumny tabeli mają mieć nazwy z  pierwszego wiersza pliku +2p.
+b) dane o ludności mają być traktowane jako liczby +2 p.
+c) i pokazywane w tabeli jak liczby +2 p.
+d) pokazać w tabeli flagi państw (wymaga modyfikacji pliku państw i dodanie kolumny, pokazującej flagę jako grafikę) +2 p.
+e) zapewnić pokazywanie wszystkich państw świata (jakich narzędzi użyjemy, żeby to łatwo zrobić) +2 p.
+f) wyróżnić  komórki z liczbą ludności dla państw z ludnością > 20 mln czerwonym kolorem pisma +2p.
+
+

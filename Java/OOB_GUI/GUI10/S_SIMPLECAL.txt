@@ -1,0 +1,15 @@
+Napisać program który tworzy "kalendarz:". Użytkownik podaje w jednym dialogu showInputDialog  datę "od" i datę "do" rozdzielone spacjami, a program wypisuje listę dat wraz ze skrótami nazw dni tygodnia  w pokazanje dalej postaci.
+
+Przykład:
+po podaniu w dialogu napisu:
+2010-12-17 2010-12-20
+program wyprowadza:
+17.12.2010 Pt
+18.12.2010 So
+19.12.2010 N
+20.12.2010 Pn
+
+Format wejścia i wyjścia (pokazany w przykładzie) jest obowiązkowy.
+
+Należy obsłużyć niewłaściwe daty poprzez wyprowadzenie informacji o błędzie (jaki napis nie może być zinterpretowany jako włąsciwa data) i  zakończenie programu.
+Podpowiedź: zob. metodę setLenient z klasy Calendar, użyj Formattera, nie używaj wyrażeń regularnych (bo będzie łatwiej).  

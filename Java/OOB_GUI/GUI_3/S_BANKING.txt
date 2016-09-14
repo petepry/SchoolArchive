@@ -1,0 +1,56 @@
+Konta bankowe 
+
+Napisać program, który symuluje operacje na kontach bankowych.
+Konta są obiektami klasy Account. Każde konto ma aktualny stan (balance) i można:
+
+    wplacać pieniądze (metoda deposit())
+    wypłacać pieniądze (metoda withdraw())
+    przelewać na inne konto (metoda transfer(...))
+    dodawać do stanu konta odsetki w skali rocznej(metoda addInterest()).
+
+Stopa oprocentowania jest wspólna dla wszystkich kont i ustalana za pomocą metody setInterestRate(...).
+
+Konta posiadają klienci banku (obiekty klasy BankCustomer). W roli klienta występuje osoba (obiekt klasy Person).
+
+Dostarczyć takich definicji w/w klas, aby poniższy program:
+
+public class BankingTest {
+
+  public static void main(String[] args) {
+
+    Person janP = new Person("Jan"),
+           alaP = new Person("Ala");
+
+    BankCustomer jan = new BankCustomer(janP);
+    BankCustomer ala = new BankCustomer(alaP);
+
+    jan.getAccount().deposit(1000);
+    ala.getAccount().deposit(2000);
+    jan.getAccount().transfer(ala.getAccount(), 500);
+    ala.getAccount().withdraw(1000);
+
+    System.out.println(jan);
+    System.out.println(ala);
+
+    Account.setInterestRate(4.5);
+    jan.getAccount().addInterest();
+    ala.getAccount().addInterest();
+
+    System.out.println(jan);
+    System.out.println(ala);
+  }
+} 
+
+
+wyprowadził następującą informację:
+
+Klient: Jan stan konta 500.0
+Klient: Ala stan konta 1500.0
+Klient: Jan stan konta 522.5
+Klient: Ala stan konta 1567.5
+
+Postać wydruku jest obowiązkowa.
+
+Program powinien dobrze działać dla  dowolnych wplat-wyplat. To znaczy, że trzeba się zabezpieczyć przed  ich niedopuszcalnymi wartościami (np. ujemne wartosci lub też wypłaty przekraczające stan konta). Najprościej będzie ignorować niedopuszczalne operacje.
+
+Uwaga: utworzonej przez generator projektów klasy BankingTest nie wolno zmieniać.
