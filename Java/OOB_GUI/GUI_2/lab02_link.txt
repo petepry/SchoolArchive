@@ -1,0 +1,69 @@
+http://sdkp.pjwstk.edu.pl/html/ewcislo/L15/labshtml/GUI02.html
+
+Zdefiniowaæ klasy z poni¿szego programu:
+
+public class Test {
+
+  public static void main(String[] args) {
+    
+    Pacjent[] pacjenci = { new ChoryNaGlowe("Janek"),
+                           new ChoryNaNoge("Edzio"),
+                           new ChoryNaDyspepsje("Marian")
+                         };
+    
+    for (Pacjent p : pacjenci) {
+      System.out.println("Pacjent:     " + p.nazwisko() + '\n' +
+                         "Chory na:    " + p.choroba() + '\n' + 
+                         "Zastosowano: " + p.leczenie() +"\n\n" 
+                         );
+    }
+
+  }
+
+}
+w taki sposób, aby otrzymaæ w wyniku nastêpuj¹cy wydruk:
+
+Pacjent:     Janek
+Chory na:    g³owa
+Zastosowano: aspiryna
+Pacjent:     Edzio
+Chory na:    noga
+Zastosowano: gips
+Pacjent:     Marian
+Chory na:    dyspepsja
+Zastosowano: wêgiel
+Uwaga: metody choroba() i leczenie() musz¹ byæ wywo³ywane polimorficznie.
+Uwaga: nazwy klas bez polskich znaków. Klasy z nazwami z polskimi znakaami nie bêd¹ sprawdzane.
+Uwaga: utworzonej przez generator projektów klasy Test nie wolno zmieniaæ.
+
+
+
+
+Kwiaciarnia  - max 12 punktów
+
+Napisaæ aplikacjê, która symuluje zakupy w kwiaciarni "samoobs³ugowej".
+W kwiaciarni s¹ kwiaty, kwiaty maj¹ swoje nazwy oraz kolory. Ceny kwiatów znajduj¹ siê w cenniku.
+Do kwiaciarni przychodz¹ klienci. Klienci maj¹ imiona oraz dysponuj¹ jakimœ zasobem pieniêdzy. Wybieraj¹ kwiaty i umieszczaj¹ je na wózku sklepowym. Nastêpnie p³ac¹ za zawartoœæ wózka i przepakowuj¹ j¹ do pude³ka (jakiegoœ pude³ka na kwiaty :-).
+Dodawanie do  programu nowych rodzajów kwiatów  ma byc bardzo ³atwe.
+Przy dodaniu nowego rodzaju kwiatów nie wolno modyfikowaæ ¿adnych innych klas programu.
+Nale¿y minimalziowaæ objêtoœæ kodu w klasach.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

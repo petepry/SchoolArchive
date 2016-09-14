@@ -1,0 +1,11 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1250"><title>S_WALKFTREEB</title></head>
+<body>Zadanie:<br><br>Katalog {user.home}/UTP6dir &nbsp;zawiera pliki
+tekstowe (z rozszerzeniem .txt) umieszczone w różnych podkatalogach.
+Kodowanie plików to Cp1250. <br>Przeglądając
+rekursywnie drzewo katalogowe, zaczynające się od {user.home}/UTP6dir,
+&nbsp;wczytaać wszystkie te pliki. i połączoną ich zawartość zapisać do
+pliku o nazwie UTP6res.txt, znadującym się w katalogu projektu.
+Kodowanie pliku <br>UTP6res.txt winno być UTF-8.<br><br>Poniższy gotowy fragment&nbsp;winien wykonać całą robotę:<br><pre>      public class Main {<br>        public static void main(String[] args) {<br>          String dirName = System.getProperty("user.home")+"/UTP6dir";<br>          String resultFileName = "UTP6res.txt";<br>          Futil.processDir(dirName, resultFileName);<br>        }<br>      }</pre>Uwagi:<br><ul><li>pliku Main.java nie wolno w żaden sposób modyfikować,</li><li>trzeba dostarczyć definicji klasy Futil,</li><li>oczywiście, nazwa katalogu i pliku oraz ich położenie są obowiązkowe,</li><li style="font-weight: bold;">należy zastosować metody przetwarzania strumieniowego (chodzi o java.util.stream), bez tego uzyskujemy 0 punktów..</li></ul><br><br><br><br>
+</body></html>

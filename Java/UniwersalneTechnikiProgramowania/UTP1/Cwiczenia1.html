@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<!-- saved from url=(0050)file://P:\FTP(Public)\kb\UTP\Cwiczenia\Cwicz1.html -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><HTML><HEAD><META 
+content="IE=11.0000" http-equiv="X-UA-Compatible">
+
+<META http-equiv="content-type" 
+content="text/html; charset=windows-1250"><TITLE>Cwiczenia</TITLE>
+<META name="GENERATOR" content="MSHTML 11.00.9600.18015"></HEAD> 
+<BODY><SPAN style="font-weight: bold;">Zadanie 1 (max &nbsp;15&nbsp; 
+p.)</SPAN><BR><BR>Przedstawiæ w tabeli JTable pañstwa z pliku.<BR><BR>Plik 
+powinien mieæ nastêpuj¹c¹ postaæ:<BR>nazwa_kol1&lt;TAB&gt;nazwa_kol2&lt;TAB&gt; 
+....<BR>nazwa_pañstwa1&lt;TAB&gt;stolica1&lt;TAB&gt; ludnoœæ1 ....<BR><BR>Na 
+przyk³ad:<BR>Name&nbsp;&nbsp;&nbsp; Capital&nbsp;&nbsp;&nbsp; 
+Population<BR>Republic of Poland&nbsp;&nbsp;&nbsp; Warsaw&nbsp;&nbsp;&nbsp; 
+38500<BR>Chech Republic&nbsp;&nbsp;&nbsp; Prague&nbsp;&nbsp;&nbsp; 
+10500&nbsp;<BR>Kingdom of Spain&nbsp;&nbsp;&nbsp; Madrid&nbsp;&nbsp;&nbsp; 
+46599<BR><BR>Plik powinien &nbsp;znajdowaæ siê w katalogu <SPAN style="font-style: italic;">data</SPAN> 
+projektu i miec nazwê <SPAN 
+style="font-style: italic;">countries.txt</SPAN><BR><BR>Wymaganiem podstawowym 
+jest pokazanie pañstw w tabeli z u¿yciem nastêpuj¹cej klasy Main, która 
+uruchamia ca³y program:<BR>
+<PRE>import javax.swing.*;<BR><BR>public class Main {<BR>  <BR>  private CountryTable ctab;<BR>  <BR>  public void createTable(String countriesFileName) throws Exception {<BR>    ctab = new CountryTable(countriesFileName);<BR>  }<BR>  <BR>  public void showGui() {<BR>    SwingUtilities.invokeLater( new Runnable() {<BR>      public void run() {<BR>        JFrame f = new JFrame("Countries table");<BR>        f.add( new JScrollPane(ctab) );<BR>        f.pack();<BR>        f.setLocationRelativeTo(null);<BR>        f.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);<BR>        f.setVisible(true);<BR>      }<BR>    });<BR>  }<BR>  <BR>  public static void main(String[] args)  {<BR>    Main main = new Main();<BR>    try {<BR>      main.createTable("data/countries.txt");<BR>      main.showGui();<BR>    } catch(Exception exc) {<BR>      JOptionPane.showMessageDialog(null, "Table creation failed, " + exc);<BR>    }<BR>  }<BR>}</PRE>
+Struktura projektu oraz zawartoœc pliku Main.java bêdzie wygenerowana,<BR><SPAN 
+style="color: red; font-weight: bold;">Zawartoœci pliku Main.java nie wolno 
+zmieniaæ</SPAN>. <SPAN style="color: red; font-weight: bold;">Nazwa i po³o¿enie 
+pliku pañswt jest obowi¹zakowa</SPAN>.<BR><SPAN style="color: red; font-weight: bold;">Archiuwm 
+uploadowanego projektu winno zawieraæ katalog data z plikiem 
+ocuntries.txt</SPAN> (sprawdziæ, czy sa zaznaczenia przy eksporcie 
+projektu)<BR><BR>Za wykonanie podstawowej czêœci zadania mozna uzyskaæ 3 
+punkty.<BR><BR>Dodatkowe wymagania:<BR><BR>a) kolumny tabeli maj¹ mieæ nazwy z 
+&nbsp;pierwszego wiersza pliku +2p.<BR>b) dane o ludnoœci maj¹ byæ traktowane 
+jako liczby +2 p.<BR>c) i pokazywane w tabeli jak liczby +2 p.<BR>d) pokazaæ w 
+tabeli flagi pañstw (wymaga modyfikacji pliku pañstw i dodanie kolumny, 
+pokazuj¹cej flagê jako grafikê) +2 p.<BR>e) zapewniæ pokazywanie wszystkich 
+pañstw œwiata (jakich narzêdzi u¿yjemy, ¿eby to ³atwo zrobiæ) +2 p.<BR>f) 
+wyró¿niæ&nbsp; komórki z liczb¹ ludnoœci dla pañstw z ludnoœci¹ &gt; 20 
+mln&nbsp;czerwonym kolorem pisma +2p.<BR><BR><BR></BODY></HTML>

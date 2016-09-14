@@ -1,0 +1,10 @@
+Pattern yf = Pattern.compile("\\sif\\s*\\(.+\\)\\.*");	= if (sth) sth;
+
+
+
+"\\sif\\s*\\(.+\\)\\.*"
+
+
+nie // if ()
+
+nie /* if () */

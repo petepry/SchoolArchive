@@ -1,0 +1,200 @@
+Name	Capital	Population
+Abkhazia	Sukhumi	216
+Afghanistan	Kabul	29863010
+Albania	Tirana	3129678
+Algeria	Algiers	32853800
+Andorra	Andorra la Vella	67151
+Angola	Luanda	15941390
+Antigua and Barbuda	St. John's	81479
+Argentina	Buenos Aires	38747150
+Armenia	Yerevan	3016312
+Australia	Canberra	20155130
+Austria	Vienna	8189444
+Azerbaijan	Baku	8410801
+Bahamas	Nassau	323063
+Bahrain	Manama	726617
+Bangladesh	Dhaka	141822300
+Barbados	Bridgetown	269556
+Belarus	Minsk	9755106
+Belgium	Brussels	10419050
+Belize	Belmopan	269736
+Benin	Cotonou	8438853
+Bhutan	Thimphu	2162546
+Bolivia	La Paz	9182015
+Bosnia and Herzegovina	Sarajevo	3907074
+Botswana	Gaborone	1764926
+Brazil	Brasília	186404900
+Brunei	Bandar Seri Begawan	373819
+Bulgaria	Sofia	7725965
+Burkina Faso	Ouagadougou	13227840
+Burundi	Bujumbura	7547515
+Cambodia	Phnom Penh	14071010
+Cameroon	Yaoundé	16321860
+Canada	Ottawa	32268240
+Cape Verde	Praia	506807
+Central African Republic	Bangui	4037747
+Chad	N'Djamena	9748931
+Chile	Valparaíso	16295100
+China People's Republic of	Beijing	1315844000
+Colombia	Bogotá	45600240
+Comoros	Moroni	797902
+Congo Democratic Republic of the	Kinshasa	57548740
+Congo Republic of the	Brazzaville	3998904
+Costa Rica	San José	4327228
+Croatia	Zagreb	4551338
+Cuba	Havana	11269400
+Cyprus	Nicosia	264172
+Czech Republic	Prague	10219600
+Denmark	Copenhagen	5430590
+Djibouti	Djibouti City	793078
+Dominica	Roseau	7894
+Dominican Republic	Santo Domingo	8894907
+Ecuador	Quito	13228420
+Egypt	Cairo	74032880
+El Salvador	San Salvador	6880951
+Equatorial Guinea	Malabo	503519
+Eritrea	Asmara	4401357
+Estonia	Tallinn	1329697
+Ethiopia	Addis Ababa	77430700
+Fiji	Suva	847706
+Finland	Helsinki	5249060
+France	Paris	60495540
+Gabon	Libreville	1383841
+Gambia	Banjul	1517079
+Georgia	Tbilisi	4474404
+Germany	Berlin	82689210
+Ghana	Accra	22112810
+Greece	Athens	11119890
+Grenada	St. George's	102924
+Guatemala	Guatemala City	12599060
+Guinea	Conakry	9402098
+Guinea-Bissau	Bissau	1586344
+Guyana	Georgetown	751218
+Haiti	Port-au-Prince	8527777
+Honduras	Tegucigalpa	7204723
+Hungary	Budapest	10097730
+Iceland	Reykjavík	294561
+India	New Delhi	1103371000
+Indonesia	Jakarta	222781500
+Iran	Tehran	69515210
+Iraq	Baghdad	28807190
+Ireland	Dublin	4147901
+Israel	Jerusalem	6724564
+Italy	Rome	58092740
+Ivory Coast	Abidjan	18153870
+Jamaica	Kingston	2650713
+Japan	Tokyo	128084700
+Jordan	Amman	5702776
+Kazakhstan	Astana	14825110
+Kenya	Nairobi	34255720
+Kiribati	South Tarawa	9935
+Korea North	Pyongyang	22487660
+Korea South	Seoul	48846823
+Kuwait	Kuwait City	2686873
+Kyrgyzstan	Bishkek	5263794
+Laos	Vientiane	5924145
+Latvia	Riga	2306988
+Lebanon	Beirut	3576818
+Lesotho	Maseru	1794769
+Liberia	Monrovia	3283267
+Libya	Tripoli	5853452
+Liechtenstein	Vaduz	34521
+Lithuania	Vilnius	3431033
+Luxembourg	Luxembourg City	464904
+Macedonia Former Yugoslavia Republic of	Skopje	2034060
+Madagascar	Antananarivo	18605920
+Malawi	Lilongwe	12883940
+Malaysia	Putrajaya	25347370
+Maldives	Malé	329198
+Mali	Bamako	13518420
+Malta	Valletta	40163
+Marshall Islands	Majuro	61963
+Mauritania	Nouakchott	3068742
+Mauritius	Port Louis	1244663
+Mexico	Mexico City	107029400
+Micronesia Federated States of	Palikir	110487
+Moldova	Chisinau	4205747
+Monaco	Monaco	35253
+Mongolia	Ulaanbaatar	2646487
+Montenegro	Podgorica	630548
+Morocco	Rabat	31478460
+Mozambique	Maputo	19792300
+Myanmar (Burma)	Naypyidaw	50519490
+Nagorno-Karabakh	Khankendi	145
+Namibia	Windhoek	2031252
+Nauru	None	13635
+Nepal	Kathmandu	27132630
+Netherlands The	Amsterdam	16299170
+New Zealand	Wellington	4028384
+Nicaragua	Managua	5486685
+Niger	Niamey	13956980
+Nigeria	Abuja	131529700
+Norway	Oslo	4620275
+Oman	Muscat	2566981
+Pakistan	Islamabad	157935100
+Palau	Melekeok	19949
+Panama	Panama City	3231502
+Papua New Guinea	Port Moresby	5887138
+Paraguay	Asunción	6158259
+Peru	Lima	27968240
+Philippines	Manila	83054480
+Poland	Warsaw	38529560
+Portugal	Lisbon	10494500
+Qatar	Doha	812842
+Romania	Bucharest	21711470
+Russia	Moscow	143201600
+Rwanda	Kigali	9037690
+Saint Kitts and Nevis	Basseterre	42696
+Saint Lucia	Castries	160765
+Saint Vincent and the Grenadines	Kingstown	119051
+Samoa	Apia	184984
+San Marino	San Marino	28117
+Saudi Arabia	Riyadh	24573100
+Senegal	Dakar	11658170
+Serbia	Belgrade	9396411
+Seychelles	Victoria	80654
+Sierra Leone	Freetown	5525478
+Singapore	Singapore	4483900
+Slovakia	Bratislava	5400908
+Slovenia	Ljubljana	1966814
+Solomon Islands	Honiara	477742
+Somalia	Mogadishu	8227826
+Somaliland	Hargeisa	3500000
+South Africa	Bloemfontein	47431830
+South Ossetia	Tskhinvali	70
+Spain	Madrid	43064190
+Sri Lanka	Kotte	20742910
+Sudan	Khartoum	36232950
+Suriname	Paramaribo	449238
+Swaziland	Lobamba	1032438
+Sweden	Stockholm	9041262
+Switzerland	Bern	7252331
+Syria	Damascus	19043380
+Sao Tomé and Príncipe	Sao Tomé	156523
+Taiwan (Republic of China)	Taipei	22894384
+Tajikistan	Dushanbe	6506980
+Tanzania	Dar es Salaam	38328810
+Thailand	Bangkok	64232760
+Togo	Lomé	6145004
+Tonga	Nuku'alofa	102311
+Transnistria	Tiraspol	555347
+Trinidad and Tobago	Port of Spain	1305236
+Tunisia	Tunis	10102470
+Turkey	Ankara	73192840
+Turkish Republic of Northern Cyprus	Nicosia	264172
+Turkmenistan	Ashgabat	4833266
+Tuvalu	Funafuti	10441
+Uganda	Kampala	28816230
+Ukraine	Kyiv	46480700
+United Arab Emirates	Abu Dhabi	4495823
+United Kingdom	London	59667840
+United States	Washington D.C.	298212900
+Uruguay	Montevideo	3463197
+Uzbekistan	Tashkent	26593120
+Vanuatu	Port Vila	211367
+Vatican City	Vatican City	783
+Venezuela	Caracas	26749110
+Vietnam	Hanoi	84238230
+Yemen	Sanaá	20974660
+Zambia	Lusaka	11668460
+Zimbabwe	Harare	13009530

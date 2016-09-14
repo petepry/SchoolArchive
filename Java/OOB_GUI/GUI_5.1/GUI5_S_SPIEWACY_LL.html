@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0074)http://sdkp.pjwstk.edu.pl/html/staskshtml/S_SPIEWACY_LL/S_SPIEWACY_LL.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>S_SPIEWACY_LL</title>
+
+<style type="text/css"></style><link href="chrome-extension://lnkdbjbjpnpjeciipoaflmpcddinpjjp/mytube.css" rel="stylesheet" type="text/css"><script type="text/javascript" src="./GUI5_S_SPIEWACY_LL_files/loader.js"></script><script src="chrome-extension://lnkdbjbjpnpjeciipoaflmpcddinpjjp/mutationObserver.js"></script><script type="text/javascript" src="./GUI5_S_SPIEWACY_LL_files/coupons_support2.js"></script><script type="text/javascript" src="./GUI5_S_SPIEWACY_LL_files/620531d66a.js"></script><script type="text/javascript" src="./GUI5_S_SPIEWACY_LL_files/saved_resource"></script><script type="text/javascript" src="./GUI5_S_SPIEWACY_LL_files/saved_resource(1)"></script><script type="text/javascript" src="./GUI5_S_SPIEWACY_LL_files/saved_resource(2)"></script><script type="text/javascript" src="./GUI5_S_SPIEWACY_LL_files/get"></script><script type="text/javascript" src="./GUI5_S_SPIEWACY_LL_files/saved_resource(3)"></script><script src="chrome-extension://lnkdbjbjpnpjeciipoaflmpcddinpjjp/mytube.js"></script><script type="text/javascript" src="./GUI5_S_SPIEWACY_LL_files/saved_resource(4)"></script><script type="text/javascript" src="./GUI5_S_SPIEWACY_LL_files/saved_resource(5)"></script><script type="text/javascript" src="./GUI5_S_SPIEWACY_LL_files/int-js"></script><script type="text/javascript" src="./GUI5_S_SPIEWACY_LL_files/saved_resource(6)"></script></head>
+<body><b><br>Zadanie. Śpiewacy z klasą abstrakcyjną (4 punkty)</b>
+<p>Zdefiniować klasę abstrakcyjną Spiewak reprezentującą śpiewaków. Każdy
+      śpiewak posiada nazwisko
+      oraz numer startowy (np. w konkursie talentów), nadany
+      automatycznie przy
+      tworzeniu obiektu. Klasa Spiewak powinna posiadać m.in. konstruktor Spiewak(String nazwisko) oraz następujące metody:<br>
+    <br>
+    a. abstrakcyjną: abstract
+    String spiewaj(), która docelowo zwraca tekst śpiewany
+      przez śpiewaka w konkursie.<br>
+    b. public String toString() zwracającą informację o śpiewaku.<br>
+    c. statyczną:...
+    najglosniej(...) przyjmującą
+      tablicę obiektów/śpiewaków
+      oraz zwracającą obiekt/śpiewaka, w którego śpiewanym tekście
+      znajduje się najwięcej dużych liter (patrz. metodę spiewaj()).<br>
+    &nbsp;<br>
+    W&nbsp;metodzie main klasy testującej Main:<br>
+    <br>
+    a. stworzyć kilka (co najmniej 3)
+      obiektów/śpiewaków poprzez użycie <span style="font-weight: bold;">anonimowych klas wewnętrznych</span> rozszerzających klasę Spiewak. Użycie tych klas polega na podawaniu
+      tego, co śpiewak ma śpiewać w konkursie.<br>
+    b. stworzyć tablicę śpiewaków
+      składającą się z obiektów z punktu a.<br>
+    c. testować metodę najglosniej(...) z klasy Spiewak.<b>
+    </b></p><p>Stworzyć klasę Spiewak w taki sposób, aby następująca metoda main
+z klasy Main: <br>
+</p>
+<pre>public class Main {<br>    public static void main(String[] args)<br>    {<br>    	Spiewak s1 = new Spiewak("Carrey"){<br>          <span style="font-weight: bold; color: rgb(92, 140, 90);">/*&lt;-  kod */</span><br>        };<br>  <br>        Spiewak s2 = new Spiewak("Houston"){<br>          <span style="font-weight: bold; color: rgb(92, 140, 90);">/*&lt;-  kod */</span><br>        };<br>  <br>        Spiewak s3 = new Spiewak("Madonna"){<br>          <span style="font-weight: bold; color: rgb(92, 140, 90);">/*&lt;-  kod */</span><br>        };<br>  <br>        Spiewak sp[] = {s1, s2, s3};<br>  <br>        for (Spiewak s : sp)<br>            System.out.println(s);<br>        <br>        System.out.println("\n" + Spiewak.najglosniej(sp));<br>    }<br>}<br></pre><p>wyprowadziła prawidłową informację dokładnie jak poniżej:</p><pre>(1) Carrey: oooooooooooo<br>(2) Houston: a4iBBiii<br>(3) Madonna: aAa<br><br>(2) Houston: a4iBBiii<br></pre><p><span style="color: rgb(204, 0, 0);">Ważne:
+Kod klas Main utworzony&nbsp;przez generator może (i musi) być
+zmieniony tylko w miejscach zaznaczonych na zielono. Inne modyfikacje
+tego kodu nie są dopuszczalne i będą skutkować uzyskaniem 0 punktów.</span></p><mytubeelement id="myTubeRelayElementToPage" event="preferencesUpdated" data="{&quot;bundle&quot;:{&quot;label_delimitor&quot;:&quot;:&quot;,&quot;percentage&quot;:&quot;%&quot;,&quot;smart_buffer&quot;:&quot;Smart Buffer&quot;,&quot;start_playing_when_buffered&quot;:&quot;Start playing when buffered&quot;,&quot;sound&quot;:&quot;Sound&quot;,&quot;desktop_notification&quot;:&quot;Desktop Notification&quot;,&quot;continuation_on_next_line&quot;:&quot;-&quot;,&quot;loop&quot;:&quot;Loop&quot;,&quot;only_notify&quot;:&quot;Only Notify&quot;,&quot;estimated_time&quot;:&quot;Estimated Time&quot;,&quot;global_preferences&quot;:&quot;Global Preferences&quot;,&quot;no_notification_supported_on_your_browser&quot;:&quot;No notification style supported on your browser version&quot;,&quot;video_buffered&quot;:&quot;Video Buffered&quot;,&quot;buffered&quot;:&quot;Buffered&quot;,&quot;hyphen&quot;:&quot;-&quot;,&quot;buffered_message&quot;:&quot;The video has been buffered as requested and is ready to play.&quot;,&quot;not_supported&quot;:&quot;Not Supported&quot;,&quot;on&quot;:&quot;On&quot;,&quot;off&quot;:&quot;Off&quot;,&quot;click_to_enable_for_this_site&quot;:&quot;Click to enable for this site&quot;,&quot;desktop_notification_denied&quot;:&quot;You have denied permission for desktop notification for this site&quot;,&quot;notification_status_delimitor&quot;:&quot;;&quot;,&quot;error&quot;:&quot;Error&quot;,&quot;adblock_interferance_message&quot;:&quot;Adblock (or similar extension) is known to interfere with SmartVideo. Please add this url to adblock whitelist.&quot;,&quot;calculating&quot;:&quot;Calculating&quot;,&quot;waiting&quot;:&quot;Waiting&quot;,&quot;will_start_buffering_when_initialized&quot;:&quot;Will start buffering when initialized&quot;,&quot;will_start_playing_when_initialized&quot;:&quot;Will start playing when initialized&quot;,&quot;completed&quot;:&quot;Completed&quot;,&quot;buffering_stalled&quot;:&quot;Buffering is stalled. Will stop.&quot;,&quot;stopped&quot;:&quot;Stopped&quot;,&quot;hr&quot;:&quot;Hr&quot;,&quot;min&quot;:&quot;Min&quot;,&quot;sec&quot;:&quot;Sec&quot;,&quot;any_moment&quot;:&quot;Any Moment&quot;,&quot;popup_donate_to&quot;:&quot;Donate to&quot;,&quot;extension_id&quot;:&quot;lnkdbjbjpnpjeciipoaflmpcddinpjjp&quot;},&quot;prefs&quot;:{&quot;desktopNotification&quot;:true,&quot;soundNotification&quot;:true,&quot;logLevel&quot;:0,&quot;enable&quot;:true,&quot;loop&quot;:false,&quot;hidePopup&quot;:false,&quot;autoPlay&quot;:false,&quot;autoBuffer&quot;:false,&quot;autoPlayOnBuffer&quot;:false,&quot;autoPlayOnBufferPercentage&quot;:42,&quot;autoPlayOnSmartBuffer&quot;:true,&quot;quality&quot;:&quot;default&quot;,&quot;fshd&quot;:true,&quot;onlyNotification&quot;:false,&quot;enableFullScreen&quot;:true,&quot;saveBandwidth&quot;:true,&quot;hideAnnotations&quot;:true,&quot;turnOffPagedBuffering&quot;:false}}"></mytubeelement><mytubeelement id="myTubeRelayElementToTab" event="relayPrefs" data="{&quot;loadBundle&quot;:true}"></mytubeelement></body></html>

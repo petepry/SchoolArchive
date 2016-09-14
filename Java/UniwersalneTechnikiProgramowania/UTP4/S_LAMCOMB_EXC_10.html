@@ -1,0 +1,11 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1250"><title>S_LAMCOMB_EXC</title></head>
+<body><h2>Zadanie badawcze </h2><h2>Przekazywanie wyjątków kontrolowanych z lambda-wyrażeń do obsługi w bloku otaczającym lambda.</h2><br>W kontekście:<br><br>&nbsp; public static void main(String[] args) throws IOException {<br>&nbsp;&nbsp;&nbsp; /*&lt;--<br>&nbsp;&nbsp;&nbsp;&nbsp; *&nbsp; definicja operacji w postaci lambda-wyrażeń :<br>&nbsp;&nbsp;&nbsp;&nbsp; *&nbsp; - flines - zwraca listę wierszy z pliku tekstowego<br>&nbsp;&nbsp;&nbsp;&nbsp; *&nbsp; - join - łączy napisy z listy (zwraca napis połączonych ze sobą elementów listy napisów)<br>&nbsp;&nbsp;&nbsp;&nbsp; *&nbsp; - collectInts - zwraca listę liczb całkowitych zawartych w napisie<br>&nbsp;&nbsp;&nbsp;&nbsp; *&nbsp; - sum - zwraca sumę elmentów listy liczb całkowitych<br>&nbsp;&nbsp;&nbsp;&nbsp; */<br><br>&nbsp;&nbsp;&nbsp; String fname = System.getProperty("user.home") + "/LamComFile.txt"; <br>&nbsp;&nbsp;&nbsp; InputConverter&lt;String&gt; fileConv = new InputConverter&lt;&gt;(fname);<br>&nbsp;&nbsp;&nbsp; List&lt;String&gt; lines = fileConv.convertBy(flines);<br>&nbsp; &nbsp;// ....<br>}<br><br><span style="font-weight: bold;">Uwaga:
+w programie nie wolno definiować żadnych własnych interfejsów, a więc
+operacje flines, join, itp. muszą opierać się na gotowych interfejsach
+funkcyjnych z pakietu java.util.function.</span><br style="font-weight: bold;"><br>Operacja flines zawiera odczyt pliku, zatem może powstać wyjątek IOException.<br>Wymagane jest, aby tę operację zdefiniowac jako lambda-wyrażenie.<br>Ale
+z lambda wyrażeń, opierających się na interfejsach funkcyjnych z
+pakietu java.util.function, nie możemy przekazać obsługi wyjatków do
+otaczającego bloku.<br>I wobec tego musimy pisać w definicji flines try { } catch { }<br>Jak spowodować, aby nie było to konieczne i w przypadku powstania wyjątku IOException<br>zadziałała klauzula throws metody main ?
+</body></html>

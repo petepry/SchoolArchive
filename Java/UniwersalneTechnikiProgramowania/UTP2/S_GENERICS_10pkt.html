@@ -1,0 +1,16 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1250"><title>S_GENERICS</title></head>
+<body>Zadanie: Generics<br><br>Stworzyć sparametryzowane interfejsy:<br><ul><li>Selector - z metodą select, zwracającą true jesli argument spełnia warunek zapisany w metodzoe i false w przeciwnym razie</li><li>Mapper - z metodą map, będącą dowolną funkcją: argument -&gt; wynik</li></ul>oraz &nbsp;sparametryzowaną klasę ListCreator, zawierającą:<br><ul><li>statyczną metodę collectFrom (lista)</li><li>metodę when</li><li>metodę mapEvery</li></ul>które działają w&nbsp;taki sposób, że symboliczny zapis:<br><br>&nbsp;&nbsp;&nbsp; <span style="font-weight: bold;">collectFrom(list1).when(selektor).mapEvery(mapper)</span><br><br>spowoduje
+utworzenie listy wynikowej, której elementy stanowią wybrane przez
+selektor elementy&nbsp;listy list1, przekształacone za pomocą
+podanego&nbsp;mappera.<br><br>Działanie wyjasnia poniższy przykładowy
+program (którego plik może być modyfikowany tylko w meijscach
+oznaczonych przez /*&lt;-- &nbsp; &nbsp;.... &nbsp;*/:<br><br><pre>      import java.util.*;<br>  <br>      public class Main {<br>        public Main() {<br>          List&lt;Integer&gt; src1 = Arrays.asList(1, 7, 9, 11, 12);<br>          System.out.println(test1(src1));<br><br>          List&lt;String&gt; src2 = Arrays.asList("a", "zzzz", "vvvvvvv" );<br>          System.out.println(test2(src2));<br>        }<br>  <br>        public List&lt;Integer&gt; test1(List&lt;Integer&gt; src) {<br>          Selector /*&lt;-- definicja selektora; bez lambda-wyrażeń; nazwa zmiennej sel */<br>          Mapper   /*&lt;-- definicja mappera; bez lambda-wyrażeń; nazwa zmiennej map */<br>          return   /*&lt;-- zwrot wyniku<br>            uzyskanego przez wywołanie statycznej metody klasy ListCreator:<br>           */  collectFrom(src).when(sel).mapEvery(map);<br>        }<br>  <br>        public List&lt;Integer&gt; test2(List&lt;String&gt; src) {<br>          Selector /*&lt;-- definicja selektora; bez lambda-wyrażeń; nazwa zmiennej sel */<br>          Mapper   /*&lt;-- definicja mappera; bez lambda-wyrażeń; nazwa zmiennej map */<br>          return   /*&lt;-- zwrot wyniku<br>            uzyskanego przez wywołanie statycznej metody klasy ListCreator:<br>           */  collectFrom(src).when(sel).mapEvery(map);<br>        }<br>  <br>        public static void main(String[] args) {<br>          new Main();<br>        }<br>      }</pre>Gdy
+w metodzie test1 selektor wybiera z listy liczby &lt; 10, a mapper
+zwraca liczbę-argument powiększoną o 10, to na konsoli powinniśmy
+zobaczyć:<br>[11, 17, 19]<br><br>Gdy w metodzie test2 &nbsp;selektor
+wybiera z listy napisy, których długiość jest &nbsp;większa od 3
+znakow, a mapper dzwraca dlugość przekazanego napisu, powiększoną o 10,
+to na konsoli zobaczymy:<br>[14, 17]<br><br>Należy obowiązkowo zapewnić takie właśnie działanie programu..
+</body></html>

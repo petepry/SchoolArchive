@@ -1,0 +1,12 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0082)http://sdkp.pjwstk.edu.pl/html/staskshtml/S_LETTERS_THREADS/S_LETTERS_THREADS.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+  <title>S_LETTERS_THREADS</title></head>
+
+<body><h2>Uruchamianie kodów&nbsp;w wątkach i kończenie wątków</h2>Zbudować
+klasę Letters, która posłuży do równoleglego uruchamiania kodów,
+wypisujących co sekundę litery podane w napisie przekazanym do
+konstruktora klasy.<br>Po stworzeniu obiektu klasy Letters w metodzie
+main(...) klasy Main wystartować wszystkie wątki, w których mają być
+wypisywane podane litery.<br>Po wstrzymaniu działania metody main(...) na 5 sekund - zakończyć działanie wszystkich kodów, wypisujących litery.<br><br>Uruchomienie poniższego programu:<br><pre>    public class Main {<br><br>      public static void main(String[] args) throws InterruptedException {<br>        Letters letters = new Letters("ABCD");<br>        for (Thread t : letters.getThreads()) System.out.println(t.getName());<br>        /*&lt;- tu uruchomić <br>             wszystkie kody w wątkach <br>         */<br><br>        Thread.sleep(5000);<br><br>        /*&lt;- tu trzeba zapisać<br>           fragment, który kończy działanie kodów, wypisujących litery <br>        */<br>        System.out.println("\nProgram skończył działanie");<br>      }<br><br>    }</pre>powinno (w tej postaci) wypisać:<br>Thread A<br>Thread B<br>Thread C<br>Thread D<br><br><span style="font-style: italic;">(po 5 sekundach)</span> <br>Program skończył działanie<br><br>Natomiast po uzupełnieniu  kodu w miejscah wskazanych przez /*&lt;- &nbsp; */ - coś w rodzaju:<br><br>Thread A<br>Thread B<br>Thread C<br>Thread D<br>ACDBDBACACDBCBDA<br>Program skończył działanie.<br><br>Uwaga 1: modyfikacje klasy Main są dopuszczalne tylko w miejscach wskazanych przez /*&lt;- */<br>Uwaga 2: nie wolno stosować System.exit<br>Uwaga 3: warto przy definiowaniu metody run() zastosować lambda-wyrażenie<br><br><br><br><br><br><br>
+</body></html>
